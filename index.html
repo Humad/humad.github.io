@@ -66,22 +66,22 @@
         <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-lg-6 ml-auto">
-            <p class="lead">Hi, I'm Humad. I write code and develop software. <br><br> I'm studying <strong>Computer Science</strong> at the <strong>University of Massachusetts Amherst</strong>. I've been developing software for the past 2 years, both professionally and as a hobby. <br><br> I'm graduating in December 2018 and actively looking for full-time software development opportunities. <br><br>I have experience with <strong>iOS Development</strong> using <strong>Swift</strong> and <strong>Full Stack Web Development</strong> using <strong>Node.js</strong>, <strong>Express</strong>, <strong>MongoDB</strong>, and <strong>React</strong>.</p>
+            <p class="lead">Hi, I'm Humad. I write code and develop software. <br><br> I'm studying <strong>Computer Science</strong> at the <strong>University of Massachusetts Amherst</strong>. I've been developing software for the past 2 years, both professionally and as a hobby. <br><br> I'm graduating in December 2018 and <strong>actively looking for full-time software development opportunities</strong>. <br><br>I have experience with <strong>iOS Development</strong> using <strong>Swift</strong> and <strong>Full Stack Web Development</strong> using <strong>Node.js</strong>, <strong>Express</strong>, <strong>MongoDB</strong>, and <strong>React</strong>.</p>
           </div>
           <div class="col-lg-6 mr-auto">
             <p class="lead"> <br><br> I'm currently working as a <strong>Software Developer and Teaching Assistant Intern</strong> at Horizons School of Technology in San Francisco for the summer. I also work as an <strong>iOS Developer</strong> for the Center of Youth Engagement at UMass Amherst during the academic year. <br><br> I'm passionate about technology, writing clean code, and creating robust software.</p>
           </div>
         </div>
         <div class="text-center mt-4">
-          <a class="btn btn-lg btn-outline-dark" href="http://www.linkedin.com/in/humadshah">
+          <a class="btn btn-lg btn-outline-dark" target="#" href="http://www.linkedin.com/in/humadshah">
             <i class="fa fa-linkedin-square mr-2"></i>
             Get to know me!
           </a>
-          <a class="btn btn-lg btn-outline-dark" href="./resume/test.txt">
+          <a class="btn btn-lg btn-outline-dark" target="#" href="./resume/test.txt">
             <i class="fa fa-file-text mr-2"></i>
             Looking to hire? Download my resume!
           </a>
-          <a class="btn btn-lg btn-outline-dark" href="http://www.github.com/humad">
+          <a class="btn btn-lg btn-outline-dark" target="#" href="http://www.github.com/humad">
             <i class="fa fa-github mr-2"></i>
             Check out my code!
           </a>
@@ -102,7 +102,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+              <img class="img-fluid" src="img/portfolio/motivate-bot.png" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -112,7 +112,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+              <img class="img-fluid" src="img/portfolio/reel-feels.png" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -122,7 +122,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+              <img class="img-fluid" src="img/portfolio/movie-guide01.png" alt="">
             </a>
           </div>
         </div>
@@ -147,13 +147,51 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Motivate Bot</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <img class="img-fluid mb-5" src="img/portfolio/motivate-bot.png" alt="">
+              <p style="text-align: left" class="mb-5">Motivate Bot is an application that sends motivational and/or wholesome text messages to its subscribers at regular intervals. 
+                <br>
+                The thought that triggered the creation of this application was, “I want to make people smile”. The idea is simple: send a message to the subscribers. However, I had to put together lots of different components in code to make this work.
+                <br>
+                <br>
+                First, there had to be an API that could provide random quotes. Luckily, <a href="https://github.com/Humad/Quotes-API">I had built one years ago</a>.
+                <br>
+                <br>
+                Second, I needed to connect to Twilio’s API to be able to send text messages. 
+                <br>
+                <br>
+                And finally, I needed to have my own database of users to go through at a regular interval and determine whether or not to send a message to them (depending on whether or not they were still subscribed, and how much time had passed since they received their last message). I also gave users the ability to select the frequency of text messages for themselves.
+                <br>
+                <br>
+
+                <img class="img-fluid mb-5" src="img/portfolio/motivate-bot01.jpg">
+
+                <br>
+                <br>
+                Initially, Motivate Bot was supposed to be a Facebook messenger application but Facebook took too long to approve my app request, so I switched over to text messages. When first creating Motivate Bot, <a href="https://medium.com/@humadvii/creating-a-motivational-facebook-messenger-bot-using-node-js-c50954e93347">I wrote a Medium article about how to create Facebook Messenger bots.</a>
+                <br>
+                <br>
+                Motivate Bot is <a href="https://motivate-bot.herokuapp.com/">currently live</a>. There is also an iOS app in development for me to track app usage.
+                <br>
+                <br>
+
+                Created using <strong>JavaScript, Node.js, Twilio, MongoDB, Heroku</strong>.
+
+                <br>
+                <br>
+              <a class="btn btn-primary btn-lg" target="#" href="https://motivate-bot.herokuapp.com/twilio/add">
+                <i class="fa fa-user-o"></i>
+                Subscribe to Motivate Bot!
+              </a>
+              <a class="btn btn-primary btn-lg" target="#" href="https://github.com/Humad/motivate-bot">
+                <i class="fa fa-github"></i>
+                See the code!
+              </a>
+              <a class="btn btn-danger btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close Project
+              </a>
             </div>
           </div>
         </div>
@@ -169,13 +207,46 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Reel Feels</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <img class="img-fluid mb-5" src="img/portfolio/reel-feels.png" alt="">
+              <p style="text-align:left" class="mb-5">A content sharing platform that provides insights into user emotions and emotional changes.
+
+                I collaborated with 3 other developers on this project. 
+
+                <br>
+                <br>
+
+                The idea is to have a platform where content creators, similar to those on YouTube or Twitch, can either upload or share their content for users to view. Apart from the usual metrics such as user views and likes/dislikes, the content creators will be able to see (either in graph form or via some other visual representation) how the users felt while viewing content. This is extremely valuable information for content creators as it allows them to determine weaknesses in their content and equips them with the data necessary to produce better content.
+
+                <br>
+                <br>
+
+                The application will require a device with a front facing camera, such as a laptop or a phone, in order to read the user’s facial features using the Affectiva API to determine their emotions. The Affectiva API runs purely on the browser and does not require any additional resources.
+
+                <br>
+                <br>
+
+                <img class="img-fluid mb-5" src="img/portfolio/reel-feels01.png">
+
+                <br>
+                <br>
+
+                Reel Feels is currently offline because hosting it is currently too expensive and it is no longer actively maintained. However, feel free to download the code and run it on your computer!
+
+                <br>
+                <br>
+
+                Created using: <strong>Python, JavaScript, SQL, Django, Affectiva, Google Charts</strong>.
+              </p>
+              <a class="btn btn-primary btn-lg" target="#" href="https://github.com/Humad/reelfeels">
+                <i class="fa fa-github"></i>
+                See the code!
+              </a>
+              <a class="btn btn-danger btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close Project
+              </a>
             </div>
           </div>
         </div>
@@ -191,13 +262,47 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Movie Guide Voice Assistant</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <img class="img-fluid mb-5" src="img/portfolio/movie-guide01.png" alt="">
+              <p style="text-align:left" class="mb-5">
+                When smart speakers were still new technology, they didn't have as many features as they did today. When I first bought the Google Home, it couldn't answer questions about movies very well. Instead of waiting for better features, I decided to create my own.
+                <br>
+                <br>
+                Movie Guide offers information to the user about movies. Users can interact with it using their voice or through text.
+                <br>
+                <br>
+                Movie Guide is an agent created using API.AI with a webhook that was created using Node.js and Express.js. It is integrated with Actions on Google and can be used on devices such as smartphones running Android, and Google Home.</p>
+                <br>
+                <br>
+                
+                <img class="img-fluid mb-5" src="img/portfolio/movie-guide.png">
+                
+                <br>
+                <br>
+                Since there aren't a lot of good movie information APIs (surprisingly), I had to create a little web scraper using Cheerio that would go through IMDB and gather some information from there. 
+              
+                <br>
+                <br>
+
+                Smart speakers have evolved since I created Movie Guide. Since it was no longer needed, I decided to take it down. However, if you like, you can download the code and run it locally!
+
+                <br>
+                <br>
+
+                Created using: <strong>JavaScript, Node.js, API.AI, Express</strong>
+
+                <br>
+                <br>
+              <a class="btn btn-primary btn-lg" target="#" href="https://github.com/Humad/MovieGuide-API.AI">
+                <i class="fa fa-github"></i>
+                See the code!
+              </a>
+              
+              <a class="btn btn-danger btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close Project
+              </a>
             </div>
           </div>
         </div>
