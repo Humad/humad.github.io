@@ -2,6 +2,8 @@
   border-radius: 100px;
 }
 
+strong { font-weight: bold; }
+
 body {
   font-family: 'Lato';
 }
