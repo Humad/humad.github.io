@@ -1,5 +1,17 @@
 #profile-picture {
-  border-radius: 100px;
+  border-radius: 100px; 
+}
+
+#img-arrow {
+  position: relative;
+  left: -230px;
+  top: 120px;
+}
+
+@media (max-width: 750px) {
+  #img-arrow {
+      display: none;
+  }
 }
 
 strong { font-weight: bold; }
@@ -16,6 +28,86 @@ h5,
 h6 {
   font-weight: 700;
   font-family: 'Montserrat';
+}
+
+hr.about-light,
+hr.about-dark {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+hr.about-light:after,
+hr.about-dark:after {
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: "\f2c3";
+  font-family: FontAwesome;
+  font-size: 2em;
+}
+
+hr.about-light{
+  border-color: #fff;
+}
+
+hr.about-light:after {
+  color: #fff;
+  background-color: black;
+}
+
+hr.about-dark {
+  border-color: black;
+}
+
+hr.about-dark:after {
+  color: black;
+  background-color: #fff;
+}
+
+hr.projects-light,
+hr.projects-dark {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+hr.projects-light:after,
+hr.projects-dark:after {
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: "\f121";
+  font-family: FontAwesome;
+  font-size: 2em;
+}
+
+hr.projects-light{
+  border-color: #fff;
+}
+
+hr.projects-light:after {
+  color: #fff;
+  background-color: #3C896D;
+}
+
+hr.projects-dark {
+  border-color: #3C896D;
+}
+
+hr.projects-dark:after {
+  color: #3C896D;
+  background-color: #fff;
 }
 
 hr.star-light,
