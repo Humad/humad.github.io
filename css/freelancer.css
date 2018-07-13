@@ -1,5 +1,28 @@
 #profile-picture {
-  border-radius: 100px; 
+  background: url('../img/profile.jpeg') no-repeat center /cover;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+#profile-picture:hover {
+  -webkit-animation: changePicture 5s step-end;
+  animation: changePicture 5s step-end;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes changePicture {
+  0% {background:url('../img/profile.jpeg') no-repeat center /cover;}
+  25% {background:url('../img/profile1.jpeg') no-repeat center /cover;}
+  50% {background:url('../img/profile2.jpeg') no-repeat center /cover;}
+  75% {background:url('../img/profile3.jpeg') no-repeat center /cover;}
+}
+
+@keyframes changePicture {
+  0% {background:url('../img/profile.jpeg') no-repeat center /cover;}
+  25% {background:url('../img/profile1.jpeg') no-repeat center /cover;}
+  50% {background:url('../img/profile2.jpeg') no-repeat center /cover;}
+  75% {background:url('../img/profile3.jpeg') no-repeat center /cover;}
 }
 
 #img-arrow {
