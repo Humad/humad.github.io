@@ -53,6 +53,46 @@ h6 {
   font-family: 'Montserrat';
 }
 
+hr.coffee-light,
+hr.coffee-dark {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+hr.coffee-light:after,
+hr.coffee-dark:after {
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: "\f0f4";
+  font-family: FontAwesome;
+  font-size: 2em;
+}
+
+hr.coffee-light{
+  border-color: #fff;
+}
+
+hr.coffee-light:after {
+  color: #fff;
+  background-color: black;
+}
+
+hr.coffee-dark {
+  border-color: black;
+}
+
+hr.coffee-dark:after {
+  color: black;
+  background-color: #fff;
+}
+
 hr.about-light,
 hr.about-dark {
   max-width: 15rem;
